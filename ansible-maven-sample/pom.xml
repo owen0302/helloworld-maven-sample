@@ -13,7 +13,7 @@
 	<packaging>war</packaging>
 
 	<name>ansible::maven::sample</name>
-	<description>Demo project for CFETS DevOps</description>
+	<description>Demo project for CloudOS DevOps</description>
 
 	<scm>
 		<url>http://gitlab/devops/ansible-maven-sample</url>
