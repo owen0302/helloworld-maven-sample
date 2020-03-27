@@ -2,10 +2,10 @@
 
 node('maven') {
 
-    def REPOSITORY_URL='http://200.31.147.77/devops/ansible-maven-sample.git';
+    def REPOSITORY_URL='http://{gitlab}/devops/ansible-maven-sample.git';
     def REPOSITORY_CREDENTIAL_ID='git';
-    def GITLAB_CONNECTION='cfets-gitlab';
-    def SONAR_SERVER='cfets-sonar';
+    def GITLAB_CONNECTION='cloudtogo-gitlab';
+    def SONAR_SERVER='cloudtogo-sonar';
 
     def artServer = Artifactory.server('artifactory');
     artServer.credentialsId='GLOBAL-ARTIFACTORY';
