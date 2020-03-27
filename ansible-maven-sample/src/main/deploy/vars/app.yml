@@ -2,6 +2,6 @@ war:
   # artifactId
   name: ansible-maven-sample
   # war包名字
-  path: com/cfets/devops
+  path: com/cloudtogo/devops
   # 部署的war包名字
   context: helloworld
