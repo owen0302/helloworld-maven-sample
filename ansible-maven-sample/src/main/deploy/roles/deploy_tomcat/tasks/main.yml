@@ -9,12 +9,12 @@
 - name: download tomcat from artifactory
   get_url: 
     validate_certs: no
-    url: "{{tomcat.base_url}}/apache-tomcat-{{tomcat.version}}.tar.gz"
-    dest: "{{app.installer_dir}}/apache-tomcat-{{tomcat.version}}.tar.gz"
-- name: 'extract tarball apache-tomcat-{{tomcat.version}}.tar.gz'
+    url: "{{tomcat.base_url}}/apache-tomcat-{{tomcat.version}}.tar"
+    dest: "{{app.installer_dir}}/apache-tomcat-{{tomcat.version}}.tar"
+- name: 'extract tarball apache-tomcat-{{tomcat.version}}.tar'
   unarchive:
     remote_src: yes
-    src: "{{app.installer_dir}}/apache-tomcat-{{tomcat.version}}.tar.gz"
+    src: "{{app.installer_dir}}/apache-tomcat-{{tomcat.version}}.tar"
     dest: './{{tomcat.install_dir}}'
 - name: rename tomcat directory
   shell: mv "apache-tomcat-{{tomcat.version}}" '{{tomcat.dir}}'
