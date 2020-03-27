@@ -1,4 +1,4 @@
-package com.cfets.devops;
+package com.cloudtogo.devops;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

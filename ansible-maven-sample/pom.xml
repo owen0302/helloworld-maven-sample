@@ -13,7 +13,7 @@
 	<packaging>war</packaging>
 
 	<name>ansible::maven::sample</name>
-	<description>Demo project for CFETS DevOps</description>
+	<description>Demo project for CloudOS DevOps</description>
 
 	<scm>
 		<url>http://gitlab/devops/ansible-maven-sample</url>
@@ -179,33 +179,6 @@
 
 	</build>
 	
-    <repositories>
-	<repository>
-			<id>devops-maven</id>
-			<name>devops-maven</name>
-			<url>http://172.17.197.192:8081/artifactory/maven-release</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-	</repository>
-</repositories>
-	
-	<profiles>
-	    <profile>
-	        <id>sonar</id>
-	        <activation>
-	            <activeByDefault>true</activeByDefault>
-	        </activation>
-	        <properties>
-	            <sonar.host.url>
-	                http://cwap.cfets.com:19000
-	            </sonar.host.url>
-	        </properties>
-	    </profile>
-	    
-	</profiles>
+
 
 </project>
