@@ -1,11 +1,11 @@
-package com.cfets.devops.rest;
+package com.cloudtogo.devops.rest;
 
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class HelloWorldController {
     
-    @RequestMapping(value="helloWorld/{name}")
+    @RequestMapping(value="hello/{name}")
     public String helloWorld(@PathVariable String name){
         return name;
     }
