@@ -4,7 +4,7 @@
     state: absent
 - name: create install dir
   file:
-    path: '{{tomcat.base_url}}'
+    path: '{{tomcat.dir}}'
     state: directory
 - name: download tomcat from artifactory
   get_url: 
