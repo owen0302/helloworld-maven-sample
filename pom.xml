@@ -8,13 +8,13 @@
 		<version>1.5.8.RELEASE</version>
 	</parent>
 
-	<groupId>com.cfets.devops</groupId>
+	<groupId>com.cloudtogo.devops</groupId>
 	<artifactId>ansible-maven-sample-parent</artifactId>
 	<version>0.0.39-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>ansible::maven::sample::parent</name>
-	<description>Demo project for CFETS DevOps</description>
+	<description>Demo project for cloudtogo DevOps</description>
 
 	<modules>
 		<module>ansible-maven-sample</module>
