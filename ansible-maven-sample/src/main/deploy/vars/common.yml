@@ -1,6 +1,6 @@
 
 artifactory:
-  repo: http://10.10.15.104:8081/artifactory/app-dev-local/
+  repo: http://10.10.15.104:8081/artifactory/app/
 
 app:
   installer_dir: ./installers
