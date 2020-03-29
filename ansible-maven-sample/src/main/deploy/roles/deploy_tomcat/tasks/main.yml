@@ -10,12 +10,12 @@
   get_url: 
     validate_certs: no
     url: "{{tomcat.base_url}}/apache-tomcat-{{tomcat.version}}.tar"
-    dest: "{{tomcat.installer_dir}}/apache-tomcat-{{tomcat.version}}.tar"
+    dest: "apache-tomcat-{{tomcat.version}}.tar"
 - name: 'extract tarball apache-tomcat-{{tomcat.version}}.tar'
   unarchive:
     remote_src: yes
-    src: "{{tomcat.installer_dir}}/apache-tomcat-{{tomcat.version}}.tar"
-    dest: './{{tomcat.install_dir}}'
+    src: "apache-tomcat-{{tomcat.version}}.tar"
+    dest: '.'
 - name: rename tomcat directory
   shell: mv "apache-tomcat-{{tomcat.version}}" '{{tomcat.dir}}'
 - name: replace config file
