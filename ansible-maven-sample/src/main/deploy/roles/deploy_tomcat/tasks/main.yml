@@ -1,3 +1,7 @@
+- name: create installer directory
+  file:
+    path: '$HOME/{{installer_dir}}/'
+    state: directory
 - name: delete tomcat
   file:
     path: '$HOME/{{tomcat.dir}}/'
@@ -6,11 +10,11 @@
   get_url: 
     validate_certs: no
     url: "{{tomcat.base_url}}/apache-tomcat-{{tomcat.version}}.tar"
-    dest: "$HOME"
-- name: 'extract tarball apache-tomcat-{{tomcat.version}}.tar'
+    dest: "$HOME/{{installer_dir}}"
+- name: 'extract tarball $HOME/{{installer_dir}}/apache-tomcat-{{tomcat.version}}.tar'
   unarchive:
     remote_src: yes
-    src: "apache-tomcat-{{tomcat.version}}.tar"
+    src: "$HOME/{{installer_dir}}/apache-tomcat-{{tomcat.version}}.tar"
     dest: '$HOME'
 - name: rename tomcat directory
   shell: mv "apache-tomcat-{{tomcat.version}}" '{{tomcat.dir}}'
