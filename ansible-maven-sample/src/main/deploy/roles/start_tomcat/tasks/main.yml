@@ -1,7 +1,7 @@
 - name: start tomcat
   shell: nohup ./startup.sh
   args:
-    chdir: tomcat/bin/
+    chdir: '$HOME/tomcat/bin/'
   register: tomcat_startup
 - debug:
     msg: "{{tomcat_startup.stdout}}"
@@ -20,4 +20,4 @@
   register: app_status
 - name: failed when server not running
   fail:
-  when: "'CFETSIT' not in app_status.content"
+  when: "'CLOUDTOGO' not in app_status.content"

@@ -6,12 +6,10 @@ app:
   installer_dir: ./installers
 
 tomcat:
-  install_dir: .
-  dir: ./tomcat
+  dir: tomcat
   version: 8.5.53
   java_opts: "-Dfile.encoding=UTF-8 -Djava.awt.headless=true -Xss256M -Xms512M "
   base_url: http://10.10.15.104:8081/artifactory/software/tomcat
-
 nginx:
   worker_processes: 4
 
