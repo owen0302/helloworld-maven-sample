@@ -10,7 +10,7 @@
 
 	<groupId>com.cloudtogo.devops</groupId>
 	<artifactId>ansible-maven-sample-parent</artifactId>
-	<version>0.0.41-SNAPSHOT</version>
+	<version>0.0.41</version>
 	<packaging>pom</packaging>
 
 	<name>ansible::maven::sample::parent</name>
