@@ -4,10 +4,17 @@
     <formats>
         <format>tar.gz</format>
     </formats>
+    <files>
+        <file>
+            <source>pom.xml</source>
+        </file>
+    </files>
     <fileSets>
         <fileSet>
             <directory>src/main/deploy</directory>
             <outputDirectory>deploy</outputDirectory>
         </fileSet>
     </fileSets>
+
+
 </assembly>
