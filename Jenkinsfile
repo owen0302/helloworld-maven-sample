@@ -2,6 +2,7 @@
 
 node('maven') {
 
+    //SAMPLE-31
     def REPOSITORY_URL='http://{gitlab}/devops/ansible-maven-sample.git';
     def REPOSITORY_CREDENTIAL_ID='git';
     def GITLAB_CONNECTION='cloudtogo-gitlab';
