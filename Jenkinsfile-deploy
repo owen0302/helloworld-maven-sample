@@ -2,6 +2,7 @@
 
 node('ansible-master') {
     
+    //story2 #SAMPLE-30
     def artServer = Artifactory.newServer url: "$ATF_URL", credentialsId: 'GLOBAL-ARTIFACTORY';
 	def ansible_ssh_credential='app-172.17.197.195';
 	def playbook_path='deploy/app.yml';
