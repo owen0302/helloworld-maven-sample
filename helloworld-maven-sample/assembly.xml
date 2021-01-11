@@ -1,5 +1,5 @@
 <assembly>
-    <id>deploy</id>
+    <id>src</id>
     <includeBaseDirectory>false</includeBaseDirectory>
     <formats>
         <format>tar.gz</format>
@@ -9,12 +9,7 @@
             <source>pom.xml</source>
         </file>
     </files>
-    <fileSets>
-        <fileSet>
-            <directory>src/main/deploy</directory>
-            <outputDirectory>deploy</outputDirectory>
-        </fileSet>
-    </fileSets>
 
 
 </assembly>
+

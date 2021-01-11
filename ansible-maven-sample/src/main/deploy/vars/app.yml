@@ -1,8 +1,0 @@
-app_server_port: 8080
-war:
-  # artifactId
-  name: ansible-maven-sample
-  # war包名字
-  path: com/cloudtogo/devops
-  # 部署的war包名字
-  context: helloworld

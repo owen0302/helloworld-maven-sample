@@ -1,16 +1,13 @@
-# CICD示例项目
+# hellowrold示例项目
 
-##测试代码提交
+To build
+--------
+    mvn clean package
 
-## CICD脚本
+Dockerfile build
 
+docker build -t helloworld:0.1 .
 
-
-+ Jenkinsfile
-+ Jenkinsfile-deploy
-
-- 通过maven，打出war包和ansible部署脚本包
-- jenkins pipeline 示例
-- gitlab模版: 参考.gitlab目录
-
-
+To run
+--------
+docker run --name tomcat  -d -p 8080:8080 -it tomcat:8.5.58

@@ -3,22 +3,18 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<artifactId>ansible-maven-sample-parent</artifactId>
+		<artifactId>helloworld-maven-sample-parent</artifactId>
 		<groupId>com.cloudtogo.devops</groupId>
-		<version>0.0.47-SNAPSHOT</version>
+		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>..</relativePath>
 	</parent>
 
-	<artifactId>ansible-maven-sample</artifactId>
+	<artifactId>helloworld-maven-sample</artifactId>
 	<packaging>war</packaging>
 
-	<name>ansible::maven::sample</name>
+	<name>helloworld::maven::sample</name>
 	<description>Demo project for CloudOS DevOps</description>
 
-	<scm>
-		<url>http://gitlab/devops/ansible-maven-sample</url>
-		<connection>scm:git:http://gitlab/devops/ansible-maven-sample.git</connection>
-	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -112,11 +108,6 @@
                 <version>3.0.0</version>
                 <executions>
                     <execution>
-                        <id>attach-artifacts</id>
-                        <phase>deploy</phase>
-                        <goals>
-                            <goal>attach-artifact</goal>
-                        </goals>
                         <configuration>
                             <artifacts>
                                 <artifact>

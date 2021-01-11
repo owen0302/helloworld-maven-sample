@@ -1,6 +1,0 @@
-- hosts: app
-  vars_files:
-    - vars/common.yml
-    - vars/app.yml
-  roles:
-    - deploy_tomcat

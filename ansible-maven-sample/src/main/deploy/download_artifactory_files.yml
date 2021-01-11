@@ -1,3 +1,0 @@
-- hosts: app
-  roles:
-    - download_artifactory_files

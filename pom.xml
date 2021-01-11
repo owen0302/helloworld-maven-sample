@@ -9,14 +9,13 @@
 	</parent>
 
 	<groupId>com.cloudtogo.devops</groupId>
-	<artifactId>ansible-maven-sample-parent</artifactId>
-	<version>0.0.47-SNAPSHOT</version>
+        <artifactId>helloworld-maven-sample-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>ansible::maven::sample::parent</name>
 	<description>Demo project for cloudtogo DevOps</description>
 
 	<modules>
-		<module>ansible-maven-sample</module>
+		<module>helloworld-maven-sample</module>
 	</modules>
 </project>
