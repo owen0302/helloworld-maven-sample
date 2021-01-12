@@ -2,7 +2,7 @@
 
 To build
 --------
-    mvn clean package
+mvn clean package
 
 Dockerfile build
 
@@ -13,5 +13,5 @@ To run
 docker run --name tomcat  -d -p 8080:8080 -it tomcat:8.5.58
 
 To kubernetes
-
+--------
 kubectl apply -f helloworld.yaml
